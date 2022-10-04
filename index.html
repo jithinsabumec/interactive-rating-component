@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div class="cards">
+        <div class="rating">
+          <img src="./icon-star.svg" alt="Rating" class="star" />
+          <h1>How did we do?</h1>
+
+          <p>
+            Please let us know how we did with your support<br />
+            request. All feedback is appreciated to help us<br />
+            improve our offering!
+          </p>
+
+          <button class="number" id="one">1</button>
+          <button class="number" id="two">2</button>
+          <button class="number" id="three">3</button>
+          <button class="number" id="four">4</button>
+          <button class="number" id="five">5</button>
+          <br />
+          <button class="submit">SUBMIT</button>
+        </div>
+        <div class="thankyou">
+          <img src="./illustration-thank-you.svg" alt="Thank You" />
+          <h2>You selected <span id="selectedrating"></span> out of 5</h2>
+          <h1 class="thankyoutext">Thank you!</h1>
+          <p class="thankyouparagraph">
+            We appreciate you taking the time to give a rating.<br />
+            If you ever need more support, don’t hesitate to<br />
+            get in touch!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="./App.js"></script>
+  </body>
+</html>
