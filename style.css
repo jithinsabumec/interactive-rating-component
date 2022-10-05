@@ -33,24 +33,7 @@ p {
   font-size: 1rem;
   font-weight: 400;
   margin-top: 1rem;
-}
-
-.number {
-  border: none;
-  background-color: #272e36;
-  color: #818994;
-  padding: 1rem 1.3rem;
-  border-radius: 5rem;
-  margin-right: 1.3rem;
-  font-weight: 700;
-  margin-top: 1.2rem;
-}
-
-.number:hover {
-  background-color: #f67710;
-  color: white;
-  transition: 0.2s ease;
-  cursor: pointer;
+  line-height: 1.7rem;
 }
 
 .submit {
@@ -60,15 +43,16 @@ p {
   border-radius: 2rem;
   font-weight: 700;
   letter-spacing: 0.108em;
-  margin-top: 1.2rem;
+  margin: auto;
+  margin-top: 5.3rem;
   border: none;
+  cursor: pointer;
 }
 
 .submit:hover {
   background-color: white;
   color: #f67710;
   transition: 0.2s ease;
-  cursor: pointer;
 }
 
 .rating {
@@ -84,17 +68,6 @@ p {
   margin: auto;
   -webkit-box-shadow: 2px 12px 29px 3px rgba(0, 0, 0, 0.37);
   box-shadow: 2px 12px 29px 3px rgba(0, 0, 0, 0.1);
-}
-
-.number-selected {
-  border: none;
-  background-color: #7c8898;
-  color: white;
-  padding: 1rem 1.3rem;
-  border-radius: 5rem;
-  margin-right: 1.3rem;
-  font-weight: 700;
-  margin-top: 1.2rem;
 }
 
 .thankyou {
@@ -138,4 +111,40 @@ h2 {
 
 .hidden {
   display: none;
+}
+
+label {
+  display: block;
+  position: relative;
+  margin-right: 4.7rem;
+  margin-top: 2rem;
+}
+label input {
+  display: none;
+}
+label span {
+  background: #272e36;
+  color: #818994;
+  font-weight: 700;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 100%;
+  padding-top: 0.9rem;
+}
+input:checked + span {
+  background-color: #7c8898;
+  color: white;
+}
+input:hover + span {
+  color: white;
+  background-color: #f67710;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
 }
